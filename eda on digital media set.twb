@@ -1,0 +1,578 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0912.2314                               -->
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <_.fcp.VizExtensionsDupEncodingUUID.true...VizExtensionsDupEncodingUUID />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Global_AI_Content_Impact_Dataset' inline='true' name='federated.16q8m930i9fjoq12mle5k0jgwwct' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Global_AI_Content_Impact_Dataset' name='textscan.0cougc204c4hls193drf41cgxn20'>
+            <connection class='textscan' directory='/Users/yuhanw/Desktop/F25/VIS/assigment' filename='Global_AI_Content_Impact_Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0cougc204c4hls193drf41cgxn20' name='Global_AI_Content_Impact_Dataset.csv' table='[Global_AI_Content_Impact_Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='string' name='Industry' ordinal='2' />
+            <column datatype='real' name='AI Adoption Rate (%)' ordinal='3' />
+            <column datatype='real' name='AI-Generated Content Volume (TBs per year)' ordinal='4' />
+            <column datatype='real' name='Job Loss Due to AI (%)' ordinal='5' />
+            <column datatype='real' name='Revenue Increase Due to AI (%)' ordinal='6' />
+            <column datatype='real' name='Human-AI Collaboration Rate (%)' ordinal='7' />
+            <column datatype='string' name='Top AI Tools Used' ordinal='8' />
+            <column datatype='string' name='Regulation Status' ordinal='9' />
+            <column datatype='real' name='Consumer Trust in AI (%)' ordinal='10' />
+            <column datatype='real' name='Market Share of AI Companies (%)' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Industry]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AI Adoption Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AI Adoption Rate (%)]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>AI Adoption Rate (%)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AI-Generated Content Volume (TBs per year)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AI-Generated Content Volume (TBs per year)]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>AI-Generated Content Volume (TBs per year)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Loss Due to AI (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Job Loss Due to AI (%)]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Job Loss Due to AI (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue Increase Due to AI (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue Increase Due to AI (%)]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Revenue Increase Due to AI (%)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human-AI Collaboration Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human-AI Collaboration Rate (%)]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Human-AI Collaboration Rate (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Top AI Tools Used</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Top AI Tools Used]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Top AI Tools Used</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regulation Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Regulation Status]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Regulation Status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consumer Trust in AI (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Consumer Trust in AI (%)]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Consumer Trust in AI (%)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market Share of AI Companies (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Market Share of AI Companies (%)]</local-name>
+            <parent-name>[Global_AI_Content_Impact_Dataset.csv]</parent-name>
+            <remote-alias>Market Share of AI Companies (%)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[AI Adoption Rate (%)]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='real' name='[Human-AI Collaboration Rate (%)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Revenue Increase Due to AI (%)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Global_AI_Content_Impact_Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59]' role='measure' type='quantitative' />
+      <column-instance column='[AI Adoption Rate (%)]' derivation='Avg' name='[avg:AI Adoption Rate (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AI Adoption Rate (%)]' derivation='Count' name='[cnt:AI Adoption Rate (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AI Adoption Rate (%)]' derivation='Sum' name='[sum:AI Adoption Rate (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Human-AI Collaboration Rate (%)]' derivation='Sum' name='[sum:Human-AI Collaboration Rate (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Revenue Increase Due to AI (%)]' derivation='Sum' name='[sum:Revenue Increase Due to AI (%):qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16q8m930i9fjoq12mle5k0jgwwct].[avg:AI Adoption Rate (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16q8m930i9fjoq12mle5k0jgwwct].[cnt:AI Adoption Rate (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16q8m930i9fjoq12mle5k0jgwwct].[sum:AI Adoption Rate (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.16q8m930i9fjoq12mle5k0jgwwct].[sum:Revenue Increase Due to AI (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16q8m930i9fjoq12mle5k0jgwwct].[sum:Human-AI Collaboration Rate (\%):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Global_AI_Content_Impact_Dataset.csv' id='Global_AI_Content_Impact_Dataset.csv_F2BDA89F6ADF4DBA86AF3E3F6868FB59'>
+            <properties context=''>
+              <relation connection='textscan.0cougc204c4hls193drf41cgxn20' name='Global_AI_Content_Impact_Dataset.csv' table='[Global_AI_Content_Impact_Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='string' name='Industry' ordinal='2' />
+                  <column datatype='real' name='AI Adoption Rate (%)' ordinal='3' />
+                  <column datatype='real' name='AI-Generated Content Volume (TBs per year)' ordinal='4' />
+                  <column datatype='real' name='Job Loss Due to AI (%)' ordinal='5' />
+                  <column datatype='real' name='Revenue Increase Due to AI (%)' ordinal='6' />
+                  <column datatype='real' name='Human-AI Collaboration Rate (%)' ordinal='7' />
+                  <column datatype='string' name='Top AI Tools Used' ordinal='8' />
+                  <column datatype='string' name='Regulation Status' ordinal='9' />
+                  <column datatype='real' name='Consumer Trust in AI (%)' ordinal='10' />
+                  <column datatype='real' name='Market Share of AI Companies (%)' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global_AI_Content_Impact_Dataset' name='federated.16q8m930i9fjoq12mle5k0jgwwct' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16q8m930i9fjoq12mle5k0jgwwct'>
+            <column datatype='real' name='[AI Adoption Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Human-AI Collaboration Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Revenue Increase Due to AI (%)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[AI Adoption Rate (%)]' derivation='Attribute' name='[attr:AI Adoption Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AI Adoption Rate (%)]' derivation='Avg' name='[avg:AI Adoption Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AI Adoption Rate (%)]' derivation='StdevP' name='[stp:AI Adoption Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Human-AI Collaboration Rate (%)]' derivation='Sum' name='[sum:Human-AI Collaboration Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Revenue Increase Due to AI (%)]' derivation='Sum' name='[sum:Revenue Increase Due to AI (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.16q8m930i9fjoq12mle5k0jgwwct].[avg:AI Adoption Rate (%):qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.ladataviz.extension.stream' extension-url='https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/streamgraph.html' extension-version='1.0.0' instance-id='D2146589285543EBB816F44F506A7742'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{1888E53E-5407-46DB-B675-BD67A9DFB60F}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[none:Year:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{1888E53E-5407-46DB-B675-BD67A9DFB60F}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[none:Year:qk]' custom-type-name='time' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{6C8DA7D7-034D-46E3-92BD-130835DFCC14}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[attr:AI Adoption Rate (%):qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{6C8DA7D7-034D-46E3-92BD-130835DFCC14}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[attr:AI Adoption Rate (%):qk]' custom-type-name='size' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{1E424460-D147-4EDB-93A8-694601DC168A}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[avg:AI Adoption Rate (%):qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{4C782226-B233-402F-B11D-94A18A478CA2}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[stp:AI Adoption Rate (%):qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{926FE2F2-D9F2-48C2-BBB3-C103EFBF2F2A}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[sum:Human-AI Collaboration Rate (%):qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{3ECFAAED-D808-4E8E-ABC1-91569EAE71D9}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[sum:Revenue Increase Due to AI (%):qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{EF9BF9DD-E96E-4DBA-87A0-B08C0C67CF16}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[none:Industry:nk]' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{568C62BC-2D67-4392-9EDA-A78585C4EAFD}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[none:Country:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{568C62BC-2D67-4392-9EDA-A78585C4EAFD}' column='[federated.16q8m930i9fjoq12mle5k0jgwwct].[none:Country:nk]' custom-type-name='color' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{07B011C7-7BEE-4FC4-BF7A-79670489837C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16q8m930i9fjoq12mle5k0jgwwct].[none:Country:nk]</field>
+            <field>[federated.16q8m930i9fjoq12mle5k0jgwwct].[none:Industry:nk]</field>
+            <field>[federated.16q8m930i9fjoq12mle5k0jgwwct].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{813435BC-47BD-43DD-9FEB-F35E228AF95B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='260'>
+      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
+      i+V0OnXt2jWdP38+Yl5/f7+OHz8uSdq1a9ccv6uVKfzcxHiPXUocQ4izlpYWnTx5UuXl5Sos
+      LFRGRoZ6e3vV1NSk1tZWZWZm6uWXX570mQiPPvqorl27psbGRr3xxhvauXOnkpOT1dzcrIaG
+      Bq1Zs0aHDh2KGmexWPSjH/1Ib7/9tt5//319/vnn2rJli1wul+rq6uR2u1VZWant27fH40eA
+      Bxi3P8dZe3u7fv/736urqytiusViUVFRkV566aUpLyIKBoM6ceKELl++rIn/dOvWrVN1dfWU
+      lye3tbXp3XffjTjjYLVatW/fPj3zzDPTPphlJlbS7c997mE1/7/+OY3d/pW1i/YwVp6HsALd
+      unVLvb29crvdWrt2rTZv3jyrN5Lf79fNmzfl8/m0efNmZWVlzWhcKBRST0+POjo6lJ6eroKC
+      gmkvWpqNlRSEe2MBXb7RNevjCBZJO7+6YdFOPRIELBsrKQiS1NLZr95ZnmnIykhe1NOOPCAF
+      WCL8bUcABn/bEUAE/rYjgAj8bUcAUfjbjgBWDYIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAI
+      AAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDA
+      IAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyC
+      AMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgA
+      DIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAg
+      CAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIA
+      wCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAM
+      ggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAI
+      AAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAM21JvwGo1NjamTz/9VF988YX6+/uVnJys
+      rKwslZeXa+3atVOOHRoa0vXr19Xa2qqhoSEVFhaquLhYGzdunHa9ra2tamlpUXt7uzIzM1VU
+      VKSSkhIlJiYu1LeGZcwSCoVCS70Rq83169d18uRJDQwMRM176KGHtGvXLh08eFAWiyVqfm9v
+      r9566y25XK6I6RaLRQcPHtTevXtjrvfUqVOqra2Nmp6bm6vXX39dqampc/huIvl8PiUlJc17
+      ObPV2dkZ93Uulfz8/EVbNnsIcdbR0aFjx47p3r172r17t6qqquR0OuXz+XTjxg39+c9/1rlz
+      52S1WnXgwIGIsW63W2+++aY8Ho/27Nmjffv2KTU1VU1NTTp58qTef/99Wa1W7d69O2q9NTU1
+      qq2tVXp6ug4fPqxt27apr69PZ86cUX19vX7zm9/oyJEjcjgc8fpR4AHEMYQ4O3funO7evaun
+      nnpKzz77rPLz8+VwOJSZmanKykr9/Oc/V3Jyss6dO6fR0dGIsRcuXJDH41FlZaUOHTqk7Oxs
+      JSYmqqKiQtXV1bLZbDp9+rSCwWDEOL/fr7NnzyopKUmvvvqqSktLZbfblZeXpxdeeEFlZWXq
+      6+tTXV1dPH8UeAARhDhra2uT1WqNuWu/bt06lZWVKRgMqqOjw0wPBAK6ePGibDabnn766ahx
+      W7duVUVFhdxutxoaGiLm1dXVaXR0VFVVVcrNzY2YZ7VatX//fknjwcHqRhDiLCUlRaFQSIFA
+      IOZrxsbGJElr1qwx0z777DN5PB6VlpbG/Iz++OOPS5KuXLkSMb2+vj5i/v2cTqcKCwvV3d2t
+      np6emX8zWHEIQpw98sgjCoVCkx7ck6Suri41NjYqIyMj4rd5+CBiSUlJzGVv375dNpst6oCj
+      y+WKWt79wsu9fyxWFw4qxtm3v/1tNTc368yZM3K73XriiSe0fv16eb1eNTY26i9/+Ysk6eWX
+      X44YNzg4KElKS0uLuWyLxaKUlBS53W4zLRQKyePxTHtkOrzciWPnamhoaN7LmK3wXtVqsJg/
+      X4IQZwkJCfrJT36i2tpa1dbWRh3I27p1qw4cOKCvfOUrEdPDQUhJSZly+SkpKerq6lIoFJLF
+      YpHX61UgEJj2lGJ4ueH13M/n8005HisDQVgCXV1dam5uljR+EDE7O1vDw8P64osv1N3drRs3
+      bkQFYWRkRJKmPS1ot9sVCAQ0NjamhIQEc6bCbrdPO27ieuZjumgthoXYs1kuFvPnSxDirK2t
+      Tb/73e+UnJysV155RY888oiZNzAwoI8//lh//OMf5Xa79cMf/tDMC/+G93q9ys7Ojrl8r9cr
+      h8OhhIQESV/+z+P1eqfcrvD8WHsSM73YiD2J5Y0gxNmJEyckSa+88opycnIi5mVkZOjFF1+U
+      3+/XuXPn9PWvf11FRUWSvvyM7/F4ply+x+OJOM5gt9vlcDhmNG7ierA6cZYhjvr7+3X79m0V
+      FRVFxSDMYrFo165dkqQbN26Y6eE3al9fX8zl+3w++Xy+qDd1WlqaXC5X1AVLE925cydiPVid
+      CEIchc/xT/cZMCMjQ9L4fQthGzZskBR9jcFEV69eVSgUUl5eXsT0DRs2yO/3q6mpadJxoVBI
+      V69eldVqjRkqrA4EIY7Cb+r29vYpf1u3tLRIktavX2+m5ebmqqCgQB0dHeru7p503KVLlyRJ
+      VVVVEdPD//3JJ59MOq65uVkDAwMqLy9fkgOCeHAQhDjKyMhQQUGBenp69MEHH0x6tWJra6tq
+      ampktVpVXl4eMS9809KxY8c0PDwcMa+mpkZtbW0qLCyMugCpuLhYTqdT165d0/nz5yPm9ff3
+      6/jx45JkPqpg9eL25zi7c+eOjh49Kp/PJ6fTqUcffVROp1PDw8NqbW1VY2OjJOmpp57Sd77z
+      nYixgUBAx44dU2Njo7KysrRz504lJyerublZDQ0NWrNmjV577bVJL0JqaWnR22+/rbt37+qx
+      xx7Tli1b5HK5VFdXp4GBAVVWVuq5556b9Jbr2eD258W3mLc/E4Ql4PF49PHHH+vy5cu6/8ef
+      k5Oj/fv3R5yOnCgYDOrEiRNRY9etW6fq6uopL09ua2vTu+++G3HGwWq1at++fXrmmWfmHQOJ
+      IMQDQVih7t27p9u3b+v27dtKSUnR+vXrZ/yQEr/fr5s3b8rn82nz5s3Kysqa0bhQKKSenh51
+      dHQoPT1dBQUF0160NBsEYfERBCwbBGHxLWYQOKgIwCAIAAyCAMAgCAAMggDAIAgADIIAwCAI
+      AAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCAAMggDA
+      IAgADIIAwCAIAAyCAMAgCAAMggDAIAgADIIAwCAIAAyCAMAgCACM/w++R7SGu6gKZAAAAABJ
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.ladataviz.extension.stream'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Streamgraph</description>
+          <author email='tristan@ladataviz.com' name='LaDataViz' organization='LaDataViz' website='https://www.ladataviz.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/streamgraph.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='time'>
+            <display-name>Time</display-name>
+            <role-spec>
+              <role-type>continuous-dimension</role-type>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='arrow-right' />
+          </encoding>
+          <encoding id='size'>
+            <display-name>Size</display-name>
+            <role-spec>
+              <role-type>continuous-dimension</role-type>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='size' />
+          </encoding>
+          <encoding id='color'>
+            <display-name>Color</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='color' />
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Streamgraph</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Sheet 1' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
