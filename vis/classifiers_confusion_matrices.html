@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Five Confusion Matrices</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .matrix-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px 60px; /* row gap, column gap */
+      max-width: 1600px;
+    }
+
+    svg {
+      background: white;
+    }
+
+    .label {
+      font-size: 14px;
+      fill: #444;
+    }
+
+    .title {
+      text-anchor: middle;
+      font-size: 16px;
+      font-weight: bold;
+      fill: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="matrix-grid" id="grid"></div>
+  <svg id="legend" width="600" height="80"></svg>
+
+  <script>
+    const datasets = [
+      { name: "Open AI Classifier", TP: 28, FN: 0, FP: 5, TN: 0, Uncertain: 2 },
+      { name: "WRITER", TP: 13, FN: 12, FP: 2, TN: 2, Uncertain: 6 },
+      { name: "CROSSPLAG", TP: 21, FN: 9, FP: 0, TN: 5, Uncertain: 0 },
+      { name: "GPTZERO", TP: 18, FN: 12, FP: 1, TN: 4, Uncertain: 0 },
+      { name: "COPYLEAK", TP: 29, FN: 1, FP: 1, TN: 4, Uncertain: 0 }
+    ];
+
+    const cellSize = 70;
+    const margin = 50;
+    const width = cellSize * 2 + margin * 2;
+    const height = cellSize * 2 + margin * 2 + 20;
+
+    const maxVal = d3.max(datasets.flatMap(d => [d.TP, d.FN, d.FP, d.TN]));
+    const color = d3.scaleSequential(d3.interpolateYlGnBu).domain([0, maxVal]);
+
+    const container = d3.select("#grid");
+
+    datasets.forEach(ds => {
+      const svg = container.append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      const g = svg.append("g")
+        .attr("transform", `translate(${margin}, ${margin})`);
+
+      const matrix = [
+        [{ label: "TP", value: ds.TP }, { label: "FN", value: ds.FN }],
+        [{ label: "FP", value: ds.FP }, { label: "TN", value: ds.TN }]
+      ];
+
+      matrix.forEach((row, i) => {
+        row.forEach((cell, j) => {
+          const x = j * cellSize;
+          const y = i * cellSize;
+          const bgColor = color(cell.value);
+          const textColor = d3.hsl(bgColor).l < 0.5 ? "white" : "#111";
+
+          g.append("rect")
+            .attr("x", x)
+            .attr("y", y)
+            .attr("width", cellSize)
+            .attr("height", cellSize)
+            .attr("fill", bgColor);
+
+          g.append("text")
+            .attr("x", x + cellSize / 2)
+            .attr("y", y + cellSize / 2)
+            .attr("text-anchor", "middle")
+            .attr("dominant-baseline", "middle")
+            .attr("fill", textColor)
+            .attr("font-weight", "bold")
+            .text(`${cell.label}: ${cell.value}`);
+        });
+      });
+
+      svg.append("text")
+        .attr("class", "title")
+        .attr("x", width / 2)
+        .attr("y", 20)
+        .text(ds.name);
+
+      g.append("text")
+        .attr("class", "label")
+        .attr("x", cellSize)
+        .attr("y", -10)
+        .attr("text-anchor", "middle")
+        .text("Predicted + / -");
+
+      g.append("text")
+        .attr("class", "label")
+        .attr("x", -20)
+        .attr("y", cellSize)
+        .attr("text-anchor", "middle")
+        .attr("transform", `rotate(-90, -20, ${cellSize})`)
+        .text("Actual + / -");
+
+      svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", height - 5)
+        .attr("text-anchor", "middle")
+        .attr("fill", "#555")
+        .attr("font-size", "13px")
+        .text(`Uncertain: ${ds.Uncertain}`);
+    });
+
+    // Legend
+    const legendWidth = 400, legendHeight = 15;
+    const legendSvg = d3.select("#legend");
+    const defs = legendSvg.append("defs");
+    const gradient = defs.append("linearGradient")
+      .attr("id", "legendGradient")
+      .attr("x1", "0%")
+      .attr("x2", "100%");
+
+    d3.range(0, 1.01, 0.1).forEach(t => {
+      gradient.append("stop")
+        .attr("offset", `${t * 100}%`)
+        .attr("stop-color", color(t * maxVal));
+    });
+
+    legendSvg.append("rect")
+      .attr("x", 100)
+      .attr("y", 30)
+      .attr("width", legendWidth)
+      .attr("height", legendHeight)
+      .attr("fill", "url(#legendGradient)");
+
+    const legendScale = d3.scaleLinear()
+      .domain([0, maxVal])
+      .range([100, 100 + legendWidth]);
+
+    const legendAxis = d3.axisBottom(legendScale)
+      .ticks(6)
+      .tickSize(6);
+
+    legendSvg.append("g")
+      .attr("transform", `translate(0, ${30 + legendHeight})`)
+      .call(legendAxis);
+
+    legendSvg.append("text")
+      .attr("x", 100 + legendWidth / 2)
+      .attr("y", 20)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#333")
+      .attr("font-weight", "bold")
+      .text("Value Legend");
+  </script>
+</body>
+</html>
