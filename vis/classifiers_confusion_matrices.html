@@ -81,15 +81,17 @@
           const y = i * cellSize;
           const bgColor = color(cell.value);
           const textColor = d3.hsl(bgColor).l < 0.5 ? "white" : "#111";
-
-          g.append("rect")
+          const g2 = g.append("g")
+            .attr("class", `g-${cell.label.toLowerCase()}`)
+            .attr("cursor", "pointer");
+          g2.append("rect")
             .attr("x", x)
             .attr("y", y)
             .attr("width", cellSize)
             .attr("height", cellSize)
             .attr("fill", bgColor);
 
-          g.append("text")
+          g2.append("text")
             .attr("x", x + cellSize / 2)
             .attr("y", y + cellSize / 2)
             .attr("text-anchor", "middle")
@@ -171,6 +173,19 @@
       .attr("fill", "#333")
       .attr("font-weight", "bold")
       .text("Value Legend");
+
+    ["tp", "tn", "fp", "fn"].forEach(label => {
+      const labelSelector = `g.g-${label}`
+      d3.selectAll(labelSelector)
+      .on("mouseover", (e) => {
+        d3.selectAll(labelSelector)
+        .style('filter', 'brightness(90%)')
+      })
+      .on("mouseleave", (e) => {
+        d3.selectAll(labelSelector)
+        .style('filter', 'brightness(100%)')
+      })
+    })
   </script>
 </body>
 </html>
