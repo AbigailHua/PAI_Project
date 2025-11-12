@@ -1,4 +1,75 @@
 * {
-  --background-color: rgb(21, 21, 21);
-  --text-color: rgb(246, 246, 246);
+  --background-color: #121212;
+  --text-color: white;
+  --accent-color: #a5fd1a;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "JetBrains Mono", monospace;
+}
+
+main {
+  width: 90%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+section#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  transition: transform 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.scroll-indicator:hover {
+  transform: translateY(5px);
+}
+
+.scroll-indicator .arrow {
+  color: var(--accent-color);
+  stroke: var(--accent-color);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+#intro h1 {
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+section:not(#intro) {
+  min-height: 100vh;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+section h1 {
+  color: var(--accent-color);
+  text-transform: uppercase;
 }
