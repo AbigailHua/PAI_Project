@@ -60,7 +60,7 @@
       const width = cellSize * 2 + margin * 2;
       const height = cellSize * 2 + margin * 2 + 20;
 
-      const maxVal = d3.max(datasets.flatMap((d) => [d.TP, d.FN, d.FP, d.TN]));
+      const maxVal = 35;
       const color = d3
         .scaleSequential(d3.interpolateYlGnBu)
         .domain([0, maxVal]);
@@ -184,6 +184,7 @@
       legendSvg
         .append("g")
         .attr("transform", `translate(0, ${30 + legendHeight})`)
+        .attr("color", "white")
         .call(legendAxis);
 
       legendSvg
