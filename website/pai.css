@@ -1,5 +1,5 @@
 * {
-  --background-color: #121212;
+  --background-color: #222429;
   --text-color: white;
   --accent-color: #a5fd1a;
   scrollbar-width: none;
@@ -17,8 +17,9 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 75%;
   max-width: 2000px;
+  min-width: 300px;
   margin: 0 auto;
 }
 
