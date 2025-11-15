@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -102,18 +103,41 @@
 
       <section>
         <h1 data-aos="fade-up">AI Detectors</h1>
+        <button
+          id="gpt-switch"
+          onclick="toggleSrc()"
+          data-aos="fade-up">
+          Show GPT-4
+        </button>
         <script
           type="module"
           src="https://us-east-1.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
         ></script>
         <tableau-viz
-          id="tableau-viz"
-          src="https://us-east-1.online.tableau.com/t/zhua37-28fd0afe01/views/GeneratedContentvsHumanWrittenParagraphs/GPT-3_5GeneratedContentvsHumanWrittenText"
+          id="generated-content-tableau-viz"
+          src="https://public.tableau.com/views/GeneratedContentvsHumanWrittenParagraphs/GPT-3_5GeneratedContentvsHumanWrittenText"
           width="1280"
           height="554"
           toolbar="bottom"
           data-aos="fade-up"
         ></tableau-viz>
+        <script>
+          function toggleSrc() {
+            const viz = document.getElementById("generated-content-tableau-viz");
+            const switchButton = document.getElementById("gpt-switch");
+
+            const src1 = "https://public.tableau.com/views/GeneratedContentvsHumanWrittenParagraphs/GPT-3_5GeneratedContentvsHumanWrittenText";
+            const src2 = "https://public.tableau.com/views/GeneratedContentvsHumanWrittenParagraphs/GPT-4GeneratedContentvsHumanWrittenText";
+
+            if (viz.src.includes(src1)) {
+              viz.src = src2;
+              switchButton.textContent = "Show GPT-3.5";
+            } else {
+              viz.src = src1;
+              switchButton.textContent = "Show GPT-4";
+            }
+          }
+        </script>
       </section>
       <section>
         <h1 data-aos="fade-up">AI Detectors - Cont.</h1>
