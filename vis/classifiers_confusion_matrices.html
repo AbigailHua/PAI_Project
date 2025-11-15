@@ -42,7 +42,7 @@
     <script>
       const datasets = [
         {
-          name: "Open AI Classifier",
+          name: "OpenAI",
           TP: 28,
           FN: 0,
           FP: 5,
@@ -52,7 +52,7 @@
         { name: "WRITER", TP: 13, FN: 12, FP: 2, TN: 2, Uncertain: 6 },
         { name: "CROSSPLAG", TP: 21, FN: 9, FP: 0, TN: 5, Uncertain: 0 },
         { name: "GPTZERO", TP: 18, FN: 12, FP: 1, TN: 4, Uncertain: 0 },
-        { name: "COPYLEAK", TP: 29, FN: 1, FP: 1, TN: 4, Uncertain: 0 },
+        { name: "COPYLEAKS", TP: 29, FN: 1, FP: 1, TN: 4, Uncertain: 0 },
       ];
 
       const cellSize = 70;
@@ -90,8 +90,8 @@
 
         matrix.forEach((row, i) => {
           row.forEach((cell, j) => {
-            const x = j * cellSize;
-            const y = i * cellSize;
+            const x = j * (cellSize + 2);
+            const y = i * (cellSize + 2);
             const bgColor = color(cell.value);
             const textColor = d3.hsl(bgColor).l < 0.5 ? "white" : "#111";
             const g2 = g
@@ -103,7 +103,8 @@
               .attr("y", y)
               .attr("width", cellSize)
               .attr("height", cellSize)
-              .attr("fill", bgColor);
+              .attr("fill", bgColor)
+              .attr("stroke", "black");
 
             g2.append("text")
               .attr("x", x + cellSize / 2)
@@ -197,13 +198,14 @@
         .text("Value Legend");
 
       ["tp", "tn", "fp", "fn"].forEach((label) => {
-        const labelSelector = `g.g-${label}`;
-        d3.selectAll(labelSelector)
+        d3.selectAll(`g.g-${label}`)
           .on("mouseover", (e) => {
-            d3.selectAll(labelSelector).style("filter", "brightness(90%)");
+            d3.selectAll(`g.g-${label} rect`)
+            .attr("stroke-width", "3");
           })
           .on("mouseleave", (e) => {
-            d3.selectAll(labelSelector).style("filter", "brightness(100%)");
+            d3.selectAll(`g.g-${label} rect`)
+              .attr("stroke-width", "0");
           });
       });
     </script>
