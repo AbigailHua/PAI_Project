@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
-    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM Plex Mono"
+      rel="stylesheet"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -40,17 +43,19 @@
         </div>
       </section>
       <section>
-        <p data-aos="fade-up">
-          Tracing the provenance of Artificial Intelligence takes us back to
-          IBM’s research labs, yet today its omnipresence shapes countless
-          facets of our lives—especially within the workforce. This project
-          invites you to explore the historical development of AI, from early
-          game-playing systems to modern workforce implication. Through these
-          stories, we open space to question how AI became so tightly linked to
-          productivity in businesses, why its adoption has accelerated across
-          industries, how it is reshaping digital media, and how rapidly these
-          tools continue to evolve.
-        </p>
+        <div class="card-container">
+          <p class="card-content">
+            Tracing the provenance of Artificial Intelligence takes us back to
+            IBM’s research labs, yet today its omnipresence shapes countless
+            facets of our lives—especially within the workforce. This project
+            invites you to explore the historical development of AI, from early
+            game-playing systems to modern workforce implication. Through these
+            stories, we open space to question how AI became so tightly linked
+            to productivity in businesses, why its adoption has accelerated
+            across industries, how it is reshaping digital media, and how
+            rapidly these tools continue to evolve.
+          </p>
+        </div>
       </section>
       <section id="history">
         <h1 data-aos="fade-up">It all starts with the games:</h1>
@@ -59,17 +64,51 @@
           development through game-playing systems.
         </p>
       </section>
+
       <section>
-        <h1 data-aos="fade-up"> Trend based on country & industry embed codes</h1>
+        <h1 data-aos="fade-up">Gloabl AI Tools Adoption Across Industries</h1>
         <div
-          class="flourish-embed flourish-chart"
-          data-src="visualisation/26167623"
+          class="flourish-embed flourish-scatter"
+          data-src="visualisation/26243220"
           data-aos="fade-up"
         >
           <script src="https://public.flourish.studio/resources/embed.js"></script>
           <noscript
             ><img
-              src="https://public.flourish.studio/visualisation/26167623/thumbnail"
+              src="https://public.flourish.studio/visualisation/26243220/thumbnail"
+              width="100%"
+              alt="scatter visualization"
+          /></noscript>
+        </div>
+      </section>
+      <section>
+        <h1 data-aos="fade-up">Gloabl AI Tools Adoption Across Industries</h1>
+        <div
+          class="flourish-embed flourish-chart"
+          data-src="visualisation/26243447"
+          data-aos="fade-up"
+        >
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript
+            ><img
+              src="https://public.flourish.studio/visualisation/26243447/thumbnail"
+              width="100%"
+              alt="chart visualization"
+          /></noscript>
+        </div>
+      </section>
+      <section>
+        <h1 data-aos="fade-up">AI Adoption Trends in Digital Media</h1>
+        <div
+          class="flourish-embed flourish-chart"
+          data-src="visualisation/26150397"
+          data-aos="fade-up"
+        >
+          >
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript
+            ><img
+              src="https://public.flourish.studio/visualisation/26150397/thumbnail"
               width="100%"
               alt="chart visualization"
           /></noscript>
@@ -77,13 +116,14 @@
       </section>
       <section>
         <h1 data-aos="fade-up">
-          AI tool use based on industry & country sankey diagram
+          AI tool used for digital media based on industry & country sankey
+          diagram
         </h1>
-        </p>
         <div
           class="flourish-embed flourish-sankey"
           data-src="visualisation/26168802"
-          data-aos="fade-up">
+          data-aos="fade-up"
+        >
           <script src="https://public.flourish.studio/resources/embed.js"></script>
           <noscript
             ><img
@@ -94,22 +134,13 @@
         </div>
       </section>
       <section>
-        <h1 data-aos="fade-up">Gloabl AI Tools Adoption Across Industries</h1>
-        <p data-aos="fade-up" >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          quos.
-        </p>
-      </section>
-
-      <section>
         <h1 data-aos="fade-up">AI Detectors</h1>
         <p data-aos="fade-up">
-          5 AI content detectors (OpenAI, Writer, Copyleaks, GPTZero, and CrossPlag) evaluated 15 paragraphs generated by GPT-3.5, 15 paragraphs generated by GPT-4, and 5 human-written paragraphs.
+          5 AI content detectors (OpenAI, Writer, Copyleaks, GPTZero, and
+          CrossPlag) evaluated 15 paragraphs generated by GPT-3.5, 15 paragraphs
+          generated by GPT-4, and 5 human-written paragraphs.
         </p>
-        <button
-          id="gpt-switch"
-          onclick="toggleSrc()"
-          data-aos="fade-up">
+        <button id="gpt-switch" onclick="toggleSrc()" data-aos="fade-up">
           Show GPT-4
         </button>
         <script
@@ -126,11 +157,15 @@
         ></tableau-viz>
         <script>
           function toggleSrc() {
-            const viz = document.getElementById("generated-content-tableau-viz");
+            const viz = document.getElementById(
+              "generated-content-tableau-viz"
+            );
             const switchButton = document.getElementById("gpt-switch");
 
-            const src1 = "https://public.tableau.com/views/GeneratedContentvsHumanWrittenParagraphs/GPT-3_5GeneratedContentvsHumanWrittenText";
-            const src2 = "https://public.tableau.com/views/GeneratedContentvsHumanWrittenParagraphs/GPT-4GeneratedContentvsHumanWrittenText";
+            const src1 =
+              "https://public.tableau.com/views/GeneratedContentvsHumanWrittenParagraphs/GPT-3_5GeneratedContentvsHumanWrittenText";
+            const src2 =
+              "https://public.tableau.com/views/GeneratedContentvsHumanWrittenParagraphs/GPT-4GeneratedContentvsHumanWrittenText";
 
             if (viz.src.includes(src1)) {
               viz.src = src2;
@@ -145,7 +180,9 @@
       <section>
         <h1 data-aos="fade-up">AI Detectors - Cont.</h1>
         <p data-aos="fade-up">
-          5 AI content detectors (OpenAI, Writer, Copyleaks, GPTZero, and CrossPlag) evaluated 15 paragraphs generated by GPT-3.5, 15 paragraphs generated by GPT-4, and 5 human-written paragraphs.
+          5 AI content detectors (OpenAI, Writer, Copyleaks, GPTZero, and
+          CrossPlag) evaluated 15 paragraphs generated by GPT-3.5, 15 paragraphs
+          generated by GPT-4, and 5 human-written paragraphs.
         </p>
         <iframe
           id="confusion-matrices-iframe"

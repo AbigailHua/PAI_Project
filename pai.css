@@ -68,11 +68,33 @@ section:not(#intro) {
   min-height: 100vh;
   padding: 50px 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 section h1 {
   color: var(--accent-color);
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+section p {
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+}
+
+.card-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content {
+  padding: 50px 30px;
+  border-radius: 30px;
 }
 
 button#gpt-switch {
