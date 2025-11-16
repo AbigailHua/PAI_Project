@@ -1,28 +1,51 @@
 * {
-  --background-color: #222429;
-  --text-color: white;
-  --accent-color: #a5fd1a;
+  /* Colors */
+  --background-color: black;
+  --header-color: #f9e4ff;
+  --body-color: #a09a9f;
+
+  /* Font Sizes */
+  --h1-fs: 80px;
+  --h2-fs: 36px;
+  --h3-fs: 32px;
+  --h4-fs: 24px;
+  --accent-color: #f9e4ff;
+  --body-fs: 20px;
+
+  /* Scrollbar */
   scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  * {
+    --h1-fs: 48px;
+    --h2-fs: 24px;
+    --h3-fs: 20px;
+    --h4-fs: 16px;
+    --body-fs: 16px;
+  }
 }
 
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  font-size: var(--body-fs);
 }
 
 body {
   background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: "JetBrains Mono", monospace;
+  color: var(--body-color);
+  font-family: "Afacad", sans-serif;
 }
 
 main {
-  width: 75%;
+  width: 100%;
   max-width: 2000px;
   min-width: 300px;
   margin: 0 auto;
 }
 
+/* Intro Section */
 section#intro {
   display: flex;
   flex-direction: column;
@@ -32,6 +55,22 @@ section#intro {
   text-align: center;
   position: relative;
   margin: 0;
+  font-size: var(--h2-fs);
+  background-image: url("images/Ellipse 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#intro h1 {
+  text-transform: uppercase;
+  color: var(--header-color);
+  margin: 0 20px;
+}
+
+section#intro p {
+  font-size: var(--h4-fs);
+  margin: 0 20px;
 }
 
 .scroll-indicator {
@@ -59,34 +98,41 @@ section#intro {
     transform: translateY(10px);
   }
 }
-#intro h1 {
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
 
+/* Other Sections */
 section:not(#intro) {
   min-height: 100vh;
   padding: 50px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+section:not(#intro) > * {
+  width: 80%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  section:not(#intro) > * {
+    width: 90%;
+  }
 }
 
 section h1 {
-  color: var(--accent-color);
-  text-transform: uppercase;
-  width: 100%;
+  color: var(--header-color);
+  text-transform: capitalize;
   text-align: center;
 }
 
 section p {
-  width: 100%;
   text-align: center;
   line-height: 2;
 }
 
+/* Cards */
 .card-container {
-  width: 100%;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -97,6 +143,7 @@ section p {
   border-radius: 30px;
 }
 
+/* GPT Switch Button */
 button#gpt-switch {
   font-family: IBM Plex Mono;
   font-size: 1rem;
