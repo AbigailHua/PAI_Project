@@ -1,0 +1,401 @@
+country,industry,ai_tool,adoption_rate,daily_active_users,year,age_group,company_size
+Australia,Agriculture,Bard,90.3,5501,2024,25-34,Enterprise
+Australia,Agriculture,ChatGPT,98.86,9405,2024,25-34,Enterprise
+Australia,Agriculture,Claude,87.41,4012,2024,25-34,Enterprise
+Australia,Agriculture,Midjourney,98.87,6183,2024,25-34,Enterprise
+Australia,Agriculture,Stable Diffusion,93.69,5435,2024,25-34,Enterprise
+Australia,Education,Bard,85.3,9237,2024,25-34,Enterprise
+Australia,Education,ChatGPT,99.97,7023,2024,25-34,Enterprise
+Australia,Education,Claude,80.0,2739,2024,25-34,Enterprise
+Australia,Education,Midjourney,87.68,3849,2024,25-34,Enterprise
+Australia,Education,Stable Diffusion,91.6,1436,2024,25-34,Enterprise
+Australia,Finance,Bard,99.55,1289,2024,25-34,Enterprise
+Australia,Finance,ChatGPT,95.04,2178,2024,25-34,Enterprise
+Australia,Finance,Claude,93.27,2173,2024,25-34,Enterprise
+Australia,Finance,Midjourney,98.76,6922,2024,25-34,Enterprise
+Australia,Finance,Stable Diffusion,94.96,9698,2024,25-34,Enterprise
+Australia,Healthcare,Bard,75.05,3334,2024,25-34,Enterprise
+Australia,Healthcare,ChatGPT,98.46,1119,2024,25-34,Enterprise
+Australia,Healthcare,Claude,69.59,2913,2024,25-34,Enterprise
+Australia,Healthcare,Midjourney,89.07,9107,2024,25-34,Enterprise
+Australia,Healthcare,Stable Diffusion,91.39,2182,2024,25-34,Enterprise
+Australia,Manufacturing,Bard,96.7,8378,2024,25-34,Enterprise
+Australia,Manufacturing,ChatGPT,94.99,3992,2024,25-34,Enterprise
+Australia,Manufacturing,Claude,56.24,4446,2024,25-34,Enterprise
+Australia,Manufacturing,Midjourney,94.23,4387,2024,25-34,Enterprise
+Australia,Manufacturing,Stable Diffusion,95.21,3829,2024,25-34,Enterprise
+Australia,Retail,Bard,99.26,6748,2024,25-34,Enterprise
+Australia,Retail,ChatGPT,99.99,8620,2024,25-34,Enterprise
+Australia,Retail,Claude,59.56,7201,2024,25-34,Enterprise
+Australia,Retail,Midjourney,98.12,2136,2024,25-34,Enterprise
+Australia,Retail,Stable Diffusion,98.34,944,2024,25-34,Enterprise
+Australia,Technology,Bard,76.89,1674,2024,25-34,Enterprise
+Australia,Technology,ChatGPT,97.12,9940,2024,25-34,Enterprise
+Australia,Technology,Claude,99.67,6629,2024,25-34,Enterprise
+Australia,Technology,Midjourney,98.58,8942,2024,25-34,Enterprise
+Australia,Technology,Stable Diffusion,98.9,6710,2024,25-34,Enterprise
+Australia,Transportation,Bard,85.95,6803,2024,25-34,Enterprise
+Australia,Transportation,ChatGPT,99.06,6677,2024,25-34,Enterprise
+Australia,Transportation,Claude,34.79,4658,2024,25-34,Enterprise
+Australia,Transportation,Midjourney,96.4,7047,2024,25-34,Enterprise
+Australia,Transportation,Stable Diffusion,97.05,7896,2024,25-34,Enterprise
+Brazil,Agriculture,Bard,94.13,1765,2024,25-34,Enterprise
+Brazil,Agriculture,ChatGPT,99.22,5789,2024,25-34,Enterprise
+Brazil,Agriculture,Claude,72.11,9662,2024,25-34,Enterprise
+Brazil,Agriculture,Midjourney,96.68,6068,2024,25-34,Enterprise
+Brazil,Agriculture,Stable Diffusion,95.2,1776,2024,25-34,Enterprise
+Brazil,Education,Bard,91.08,2924,2024,25-34,Enterprise
+Brazil,Education,ChatGPT,99.54,473,2024,25-34,Enterprise
+Brazil,Education,Claude,89.54,8592,2024,25-34,Enterprise
+Brazil,Education,Midjourney,90.38,7854,2024,25-34,Enterprise
+Brazil,Education,Stable Diffusion,97.76,1540,2024,25-34,Enterprise
+Brazil,Finance,Bard,97.4,5304,2024,25-34,Enterprise
+Brazil,Finance,ChatGPT,97.01,7035,2024,25-34,Enterprise
+Brazil,Finance,Claude,98.49,6373,2024,25-34,Enterprise
+Brazil,Finance,Midjourney,96.76,968,2024,25-34,Enterprise
+Brazil,Finance,Stable Diffusion,95.25,7609,2024,25-34,Enterprise
+Brazil,Healthcare,Bard,96.4,5277,2024,25-34,Enterprise
+Brazil,Healthcare,ChatGPT,94.61,6271,2024,25-34,Enterprise
+Brazil,Healthcare,Claude,92.14,766,2024,25-34,Enterprise
+Brazil,Healthcare,Midjourney,88.77,467,2024,25-34,Enterprise
+Brazil,Healthcare,Stable Diffusion,94.69,3311,2024,25-34,Enterprise
+Brazil,Manufacturing,Bard,75.73,2148,2024,25-34,Enterprise
+Brazil,Manufacturing,ChatGPT,99.4,2309,2024,25-34,Enterprise
+Brazil,Manufacturing,Claude,64.0,4912,2024,25-34,Enterprise
+Brazil,Manufacturing,Midjourney,93.4,8282,2024,25-34,Enterprise
+Brazil,Manufacturing,Stable Diffusion,98.13,968,2024,25-34,Enterprise
+Brazil,Retail,Bard,93.25,2681,2024,25-34,Enterprise
+Brazil,Retail,ChatGPT,99.78,7711,2024,25-34,Enterprise
+Brazil,Retail,Claude,63.53,3439,2024,25-34,Enterprise
+Brazil,Retail,Midjourney,99.59,364,2024,25-34,Enterprise
+Brazil,Retail,Stable Diffusion,52.43,983,2024,25-34,Enterprise
+Brazil,Technology,Bard,60.89,4721,2024,25-34,Enterprise
+Brazil,Technology,ChatGPT,97.62,2714,2024,25-34,Enterprise
+Brazil,Technology,Claude,89.9,1054,2024,25-34,Enterprise
+Brazil,Technology,Midjourney,97.63,7296,2024,25-34,Enterprise
+Brazil,Technology,Stable Diffusion,93.55,1297,2024,25-34,Enterprise
+Brazil,Transportation,Bard,67.16,7294,2024,25-34,Enterprise
+Brazil,Transportation,ChatGPT,96.61,7049,2024,25-34,Enterprise
+Brazil,Transportation,Claude,91.52,5810,2024,25-34,Enterprise
+Brazil,Transportation,Midjourney,84.78,7435,2024,25-34,Enterprise
+Brazil,Transportation,Stable Diffusion,98.93,3199,2024,25-34,Enterprise
+Canada,Agriculture,Bard,96.22,6494,2024,25-34,Enterprise
+Canada,Agriculture,ChatGPT,99.66,5908,2024,25-34,Enterprise
+Canada,Agriculture,Claude,71.31,3107,2024,25-34,Enterprise
+Canada,Agriculture,Midjourney,98.71,2201,2024,25-34,Enterprise
+Canada,Agriculture,Stable Diffusion,95.5,9570,2024,25-34,Enterprise
+Canada,Education,Bard,83.92,3294,2024,25-34,Enterprise
+Canada,Education,ChatGPT,98.56,9955,2024,25-34,Enterprise
+Canada,Education,Claude,55.98,345,2024,25-34,Enterprise
+Canada,Education,Midjourney,98.38,4275,2024,25-34,Enterprise
+Canada,Education,Stable Diffusion,96.43,2448,2024,25-34,Enterprise
+Canada,Finance,Bard,92.14,4149,2024,25-34,Enterprise
+Canada,Finance,ChatGPT,96.37,9840,2024,25-34,Enterprise
+Canada,Finance,Claude,59.96,2668,2024,25-34,Enterprise
+Canada,Finance,Midjourney,97.5,6073,2024,25-34,Enterprise
+Canada,Finance,Stable Diffusion,98.13,7130,2024,25-34,Enterprise
+Canada,Healthcare,Bard,97.76,895,2024,25-34,Enterprise
+Canada,Healthcare,ChatGPT,97.61,8332,2024,25-34,Enterprise
+Canada,Healthcare,Claude,89.68,9728,2024,25-34,Enterprise
+Canada,Healthcare,Midjourney,97.08,285,2024,25-34,Enterprise
+Canada,Healthcare,Stable Diffusion,71.77,4137,2024,25-34,Enterprise
+Canada,Manufacturing,Bard,96.15,6683,2024,25-34,Enterprise
+Canada,Manufacturing,ChatGPT,94.39,8574,2024,25-34,Enterprise
+Canada,Manufacturing,Claude,91.78,6133,2024,25-34,Enterprise
+Canada,Manufacturing,Midjourney,96.73,5766,2024,25-34,Enterprise
+Canada,Manufacturing,Stable Diffusion,98.07,3540,2024,25-34,Enterprise
+Canada,Retail,Bard,91.67,4563,2024,25-34,Enterprise
+Canada,Retail,ChatGPT,97.42,4883,2024,25-34,Enterprise
+Canada,Retail,Claude,62.23,4808,2024,25-34,Enterprise
+Canada,Retail,Midjourney,98.55,9757,2024,25-34,Enterprise
+Canada,Retail,Stable Diffusion,97.74,9998,2024,25-34,Enterprise
+Canada,Technology,Bard,90.84,4706,2024,25-34,Enterprise
+Canada,Technology,ChatGPT,99.83,9086,2024,25-34,Enterprise
+Canada,Technology,Claude,96.5,7749,2024,25-34,Enterprise
+Canada,Technology,Midjourney,95.0,5083,2024,25-34,Enterprise
+Canada,Technology,Stable Diffusion,82.71,9597,2024,25-34,Enterprise
+Canada,Transportation,Bard,89.42,5797,2024,25-34,Enterprise
+Canada,Transportation,ChatGPT,97.68,5363,2024,25-34,Enterprise
+Canada,Transportation,Claude,94.33,9947,2024,25-34,Enterprise
+Canada,Transportation,Midjourney,94.91,7637,2024,25-34,Enterprise
+Canada,Transportation,Stable Diffusion,97.05,4901,2024,25-34,Enterprise
+China,Agriculture,Bard,81.48,6962,2024,25-34,Enterprise
+China,Agriculture,ChatGPT,96.45,9020,2024,25-34,Enterprise
+China,Agriculture,Claude,74.71,648,2024,25-34,Enterprise
+China,Agriculture,Midjourney,97.54,9403,2024,25-34,Enterprise
+China,Agriculture,Stable Diffusion,97.02,4959,2024,25-34,Enterprise
+China,Education,Bard,74.34,7628,2024,25-34,Enterprise
+China,Education,ChatGPT,92.66,4179,2024,25-34,Enterprise
+China,Education,Claude,60.31,843,2024,25-34,Enterprise
+China,Education,Midjourney,95.1,1168,2024,25-34,Enterprise
+China,Education,Stable Diffusion,99.77,1399,2024,25-34,Enterprise
+China,Finance,Bard,99.76,6694,2024,25-34,Enterprise
+China,Finance,ChatGPT,99.73,9166,2024,25-34,Enterprise
+China,Finance,Claude,73.69,7604,2024,25-34,Enterprise
+China,Finance,Midjourney,99.74,7610,2024,25-34,Enterprise
+China,Finance,Stable Diffusion,98.85,6131,2024,25-34,Enterprise
+China,Healthcare,Bard,96.21,8532,2024,25-34,Enterprise
+China,Healthcare,ChatGPT,89.49,7578,2024,25-34,Enterprise
+China,Healthcare,Claude,95.03,3687,2024,25-34,Enterprise
+China,Healthcare,Midjourney,90.03,3255,2024,25-34,Enterprise
+China,Healthcare,Stable Diffusion,97.69,2629,2024,25-34,Enterprise
+China,Manufacturing,Bard,97.33,5756,2024,25-34,Enterprise
+China,Manufacturing,ChatGPT,85.26,4365,2024,25-34,Enterprise
+China,Manufacturing,Claude,96.41,3107,2024,25-34,Enterprise
+China,Manufacturing,Midjourney,95.98,5560,2024,25-34,Enterprise
+China,Manufacturing,Stable Diffusion,98.2,8653,2024,25-34,Enterprise
+China,Retail,Bard,78.05,1204,2024,25-34,Enterprise
+China,Retail,ChatGPT,95.46,3579,2024,25-34,Enterprise
+China,Retail,Claude,89.61,835,2024,25-34,Enterprise
+China,Retail,Midjourney,94.51,7848,2024,25-34,Enterprise
+China,Retail,Stable Diffusion,97.92,7237,2024,25-34,Enterprise
+China,Technology,Bard,87.91,3391,2024,25-34,Enterprise
+China,Technology,ChatGPT,97.39,8502,2024,25-34,Enterprise
+China,Technology,Claude,61.92,8696,2024,25-34,Enterprise
+China,Technology,Midjourney,87.0,2381,2024,25-34,Enterprise
+China,Technology,Stable Diffusion,96.26,3023,2024,25-34,Enterprise
+China,Transportation,Bard,96.77,8971,2024,25-34,Enterprise
+China,Transportation,ChatGPT,99.53,6915,2024,25-34,Enterprise
+China,Transportation,Claude,94.83,4608,2024,25-34,Enterprise
+China,Transportation,Midjourney,94.08,281,2024,25-34,Enterprise
+China,Transportation,Stable Diffusion,99.09,1053,2024,25-34,Enterprise
+France,Agriculture,Bard,85.55,3032,2024,25-34,Enterprise
+France,Agriculture,ChatGPT,99.12,2885,2024,25-34,Enterprise
+France,Agriculture,Claude,83.79,812,2024,25-34,Enterprise
+France,Agriculture,Midjourney,90.44,6439,2024,25-34,Enterprise
+France,Agriculture,Stable Diffusion,96.31,9457,2024,25-34,Enterprise
+France,Education,Bard,97.35,5707,2024,25-34,Enterprise
+France,Education,ChatGPT,94.34,9930,2024,25-34,Enterprise
+France,Education,Claude,99.85,4839,2024,25-34,Enterprise
+France,Education,Midjourney,95.57,1574,2024,25-34,Enterprise
+France,Education,Stable Diffusion,95.49,6832,2024,25-34,Enterprise
+France,Finance,Bard,84.13,363,2024,25-34,Enterprise
+France,Finance,ChatGPT,99.72,7615,2024,25-34,Enterprise
+France,Finance,Claude,44.15,1337,2024,25-34,Enterprise
+France,Finance,Midjourney,96.08,1782,2024,25-34,Enterprise
+France,Finance,Stable Diffusion,99.87,682,2024,25-34,Enterprise
+France,Healthcare,Bard,74.97,405,2024,25-34,Enterprise
+France,Healthcare,ChatGPT,96.77,5458,2024,25-34,Enterprise
+France,Healthcare,Claude,95.8,9056,2024,25-34,Enterprise
+France,Healthcare,Midjourney,97.87,5767,2024,25-34,Enterprise
+France,Healthcare,Stable Diffusion,81.58,6203,2024,25-34,Enterprise
+France,Manufacturing,Bard,95.75,9506,2024,25-34,Enterprise
+France,Manufacturing,ChatGPT,98.15,912,2024,25-34,Enterprise
+France,Manufacturing,Claude,93.06,7270,2024,25-34,Enterprise
+France,Manufacturing,Midjourney,97.27,216,2024,25-34,Enterprise
+France,Manufacturing,Stable Diffusion,91.37,5885,2024,25-34,Enterprise
+France,Retail,Bard,88.47,5169,2024,25-34,Enterprise
+France,Retail,ChatGPT,99.3,3514,2024,25-34,Enterprise
+France,Retail,Claude,91.89,8847,2024,25-34,Enterprise
+France,Retail,Midjourney,98.42,1844,2024,25-34,Enterprise
+France,Retail,Stable Diffusion,91.24,6848,2024,25-34,Enterprise
+France,Technology,Bard,80.37,2622,2024,25-34,Enterprise
+France,Technology,ChatGPT,98.12,6344,2024,25-34,Enterprise
+France,Technology,Claude,91.57,2893,2024,25-34,Enterprise
+France,Technology,Midjourney,98.51,4592,2024,25-34,Enterprise
+France,Technology,Stable Diffusion,98.01,1659,2024,25-34,Enterprise
+France,Transportation,Bard,76.16,1020,2024,25-34,Enterprise
+France,Transportation,ChatGPT,97.07,3987,2024,25-34,Enterprise
+France,Transportation,Claude,67.22,7116,2024,25-34,Enterprise
+France,Transportation,Midjourney,90.0,8949,2024,25-34,Enterprise
+France,Transportation,Stable Diffusion,84.15,9856,2024,25-34,Enterprise
+Germany,Agriculture,Bard,96.44,690,2024,25-34,Enterprise
+Germany,Agriculture,ChatGPT,97.38,6050,2024,25-34,Enterprise
+Germany,Agriculture,Claude,95.71,3764,2024,25-34,Enterprise
+Germany,Agriculture,Midjourney,91.7,7124,2024,25-34,Enterprise
+Germany,Agriculture,Stable Diffusion,96.57,9251,2024,25-34,Enterprise
+Germany,Education,Bard,84.42,7579,2024,25-34,Enterprise
+Germany,Education,ChatGPT,98.67,6737,2024,25-34,Enterprise
+Germany,Education,Claude,79.42,8328,2024,25-34,Enterprise
+Germany,Education,Midjourney,99.45,4618,2024,25-34,Enterprise
+Germany,Education,Stable Diffusion,93.98,9769,2024,25-34,Enterprise
+Germany,Finance,Bard,80.95,8702,2024,25-34,Enterprise
+Germany,Finance,ChatGPT,99.29,9496,2024,25-34,Enterprise
+Germany,Finance,Claude,88.92,2849,2024,25-34,Enterprise
+Germany,Finance,Midjourney,97.69,9718,2024,25-34,Enterprise
+Germany,Finance,Stable Diffusion,97.19,4098,2024,25-34,Enterprise
+Germany,Healthcare,Bard,99.48,8069,2024,25-34,Enterprise
+Germany,Healthcare,ChatGPT,96.98,4889,2024,25-34,Enterprise
+Germany,Healthcare,Claude,90.72,6571,2024,25-34,Enterprise
+Germany,Healthcare,Midjourney,98.52,6227,2024,25-34,Enterprise
+Germany,Healthcare,Stable Diffusion,97.52,4185,2024,25-34,Enterprise
+Germany,Manufacturing,Bard,94.83,3497,2024,25-34,Enterprise
+Germany,Manufacturing,ChatGPT,99.31,9846,2024,25-34,Enterprise
+Germany,Manufacturing,Claude,76.98,3167,2024,25-34,Enterprise
+Germany,Manufacturing,Midjourney,96.46,2410,2024,25-34,Enterprise
+Germany,Manufacturing,Stable Diffusion,90.13,1407,2024,25-34,Enterprise
+Germany,Retail,Bard,66.83,3711,2024,25-34,Enterprise
+Germany,Retail,ChatGPT,98.85,9727,2024,25-34,Enterprise
+Germany,Retail,Claude,99.52,5550,2024,25-34,Enterprise
+Germany,Retail,Midjourney,97.23,2778,2024,25-34,Enterprise
+Germany,Retail,Stable Diffusion,86.49,6992,2024,25-34,Enterprise
+Germany,Technology,Bard,96.02,6321,2024,25-34,Enterprise
+Germany,Technology,ChatGPT,99.0,8544,2024,25-34,Enterprise
+Germany,Technology,Claude,50.83,244,2024,25-34,Enterprise
+Germany,Technology,Midjourney,96.47,2714,2024,25-34,Enterprise
+Germany,Technology,Stable Diffusion,98.88,3374,2024,25-34,Enterprise
+Germany,Transportation,Bard,95.26,8330,2024,25-34,Enterprise
+Germany,Transportation,ChatGPT,98.6,4462,2024,25-34,Enterprise
+Germany,Transportation,Claude,93.26,5642,2024,25-34,Enterprise
+Germany,Transportation,Midjourney,95.27,2800,2024,25-34,Enterprise
+Germany,Transportation,Stable Diffusion,99.03,5102,2024,25-34,Enterprise
+India,Agriculture,Bard,99.86,8553,2024,25-34,Enterprise
+India,Agriculture,ChatGPT,96.05,2015,2024,25-34,Enterprise
+India,Agriculture,Claude,15.38,8378,2024,25-34,Enterprise
+India,Agriculture,Midjourney,99.75,2774,2024,25-34,Enterprise
+India,Agriculture,Stable Diffusion,82.81,1266,2024,25-34,Enterprise
+India,Education,Bard,98.41,6952,2024,25-34,Enterprise
+India,Education,ChatGPT,98.03,3507,2024,25-34,Enterprise
+India,Education,Claude,78.71,6228,2024,25-34,Enterprise
+India,Education,Midjourney,93.68,4739,2024,25-34,Enterprise
+India,Education,Stable Diffusion,76.29,1262,2024,25-34,Enterprise
+India,Finance,Bard,90.98,1305,2024,25-34,Enterprise
+India,Finance,ChatGPT,98.62,776,2024,25-34,Enterprise
+India,Finance,Claude,37.42,9104,2024,25-34,Enterprise
+India,Finance,Midjourney,97.73,668,2024,25-34,Enterprise
+India,Finance,Stable Diffusion,88.2,2616,2024,25-34,Enterprise
+India,Healthcare,Bard,98.01,5722,2024,25-34,Enterprise
+India,Healthcare,ChatGPT,99.44,9817,2024,25-34,Enterprise
+India,Healthcare,Claude,82.7,6967,2024,25-34,Enterprise
+India,Healthcare,Midjourney,95.78,981,2024,25-34,Enterprise
+India,Healthcare,Stable Diffusion,97.65,3734,2024,25-34,Enterprise
+India,Manufacturing,Bard,99.02,4299,2024,25-34,Enterprise
+India,Manufacturing,ChatGPT,99.56,6621,2024,25-34,Enterprise
+India,Manufacturing,Claude,55.35,9581,2024,25-34,Enterprise
+India,Manufacturing,Midjourney,90.66,2360,2024,25-34,Enterprise
+India,Manufacturing,Stable Diffusion,85.26,5281,2024,25-34,Enterprise
+India,Retail,Bard,93.84,8286,2024,25-34,Enterprise
+India,Retail,ChatGPT,98.17,3090,2024,25-34,Enterprise
+India,Retail,Claude,39.19,9300,2024,25-34,Enterprise
+India,Retail,Midjourney,88.71,7482,2024,25-34,Enterprise
+India,Retail,Stable Diffusion,97.83,6665,2024,25-34,Enterprise
+India,Technology,Bard,87.26,9825,2024,25-34,Enterprise
+India,Technology,ChatGPT,99.01,6990,2024,25-34,Enterprise
+India,Technology,Claude,96.81,9455,2024,25-34,Enterprise
+India,Technology,Midjourney,98.47,7157,2024,25-34,Enterprise
+India,Technology,Stable Diffusion,92.37,9088,2024,25-34,Enterprise
+India,Transportation,Bard,99.4,2582,2024,25-34,Enterprise
+India,Transportation,ChatGPT,93.95,1354,2024,25-34,Enterprise
+India,Transportation,Claude,64.24,9356,2024,25-34,Enterprise
+India,Transportation,Midjourney,98.0,5854,2024,25-34,Enterprise
+India,Transportation,Stable Diffusion,99.37,9018,2024,25-34,Enterprise
+South Korea,Agriculture,Bard,97.75,1872,2024,25-34,Enterprise
+South Korea,Agriculture,ChatGPT,92.08,9668,2024,25-34,Enterprise
+South Korea,Agriculture,Claude,90.27,5986,2024,25-34,Enterprise
+South Korea,Agriculture,Midjourney,99.92,7428,2024,25-34,Enterprise
+South Korea,Agriculture,Stable Diffusion,97.28,3575,2024,25-34,Enterprise
+South Korea,Education,Bard,97.08,510,2024,25-34,Enterprise
+South Korea,Education,ChatGPT,91.11,786,2024,25-34,Enterprise
+South Korea,Education,Claude,70.34,5569,2024,25-34,Enterprise
+South Korea,Education,Midjourney,99.86,3598,2024,25-34,Enterprise
+South Korea,Education,Stable Diffusion,92.98,8034,2024,25-34,Enterprise
+South Korea,Finance,Bard,73.67,4838,2024,25-34,Enterprise
+South Korea,Finance,ChatGPT,98.03,194,2024,25-34,Enterprise
+South Korea,Finance,Claude,82.33,7431,2024,25-34,Enterprise
+South Korea,Finance,Midjourney,89.29,4369,2024,25-34,Enterprise
+South Korea,Finance,Stable Diffusion,65.0,9437,2024,25-34,Enterprise
+South Korea,Healthcare,Bard,98.43,252,2024,25-34,Enterprise
+South Korea,Healthcare,ChatGPT,97.39,7734,2024,25-34,Enterprise
+South Korea,Healthcare,Claude,82.82,4462,2024,25-34,Enterprise
+South Korea,Healthcare,Midjourney,94.25,9181,2024,25-34,Enterprise
+South Korea,Healthcare,Stable Diffusion,93.96,4846,2024,25-34,Enterprise
+South Korea,Manufacturing,Bard,89.6,764,2024,25-34,Enterprise
+South Korea,Manufacturing,ChatGPT,95.54,1408,2024,25-34,Enterprise
+South Korea,Manufacturing,Claude,98.92,5937,2024,25-34,Enterprise
+South Korea,Manufacturing,Midjourney,96.46,6828,2024,25-34,Enterprise
+South Korea,Manufacturing,Stable Diffusion,77.06,8388,2024,25-34,Enterprise
+South Korea,Retail,Bard,76.21,5905,2024,25-34,Enterprise
+South Korea,Retail,ChatGPT,96.59,2076,2024,25-34,Enterprise
+South Korea,Retail,Claude,93.22,5228,2024,25-34,Enterprise
+South Korea,Retail,Midjourney,96.18,7669,2024,25-34,Enterprise
+South Korea,Retail,Stable Diffusion,89.4,4451,2024,25-34,Enterprise
+South Korea,Technology,Bard,95.18,1393,2024,25-34,Enterprise
+South Korea,Technology,ChatGPT,98.64,2603,2024,25-34,Enterprise
+South Korea,Technology,Claude,9.45,7581,2024,25-34,Enterprise
+South Korea,Technology,Midjourney,96.94,9184,2024,25-34,Enterprise
+South Korea,Technology,Stable Diffusion,88.46,7841,2024,25-34,Enterprise
+South Korea,Transportation,Bard,98.03,1369,2024,25-34,Enterprise
+South Korea,Transportation,ChatGPT,90.48,1870,2024,25-34,Enterprise
+South Korea,Transportation,Claude,93.24,4680,2024,25-34,Enterprise
+South Korea,Transportation,Midjourney,98.96,9484,2024,25-34,Enterprise
+South Korea,Transportation,Stable Diffusion,64.79,7702,2024,25-34,Enterprise
+UK,Agriculture,Bard,86.81,906,2024,25-34,Enterprise
+UK,Agriculture,ChatGPT,99.96,325,2024,25-34,Enterprise
+UK,Agriculture,Claude,55.48,1356,2024,25-34,Enterprise
+UK,Agriculture,Midjourney,87.04,8155,2024,25-34,Enterprise
+UK,Agriculture,Stable Diffusion,92.27,4280,2024,25-34,Enterprise
+UK,Education,Bard,90.59,2710,2024,25-34,Enterprise
+UK,Education,ChatGPT,98.24,6627,2024,25-34,Enterprise
+UK,Education,Claude,83.35,8779,2024,25-34,Enterprise
+UK,Education,Midjourney,98.17,7433,2024,25-34,Enterprise
+UK,Education,Stable Diffusion,95.12,1479,2024,25-34,Enterprise
+UK,Finance,Bard,85.71,1680,2024,25-34,Enterprise
+UK,Finance,ChatGPT,96.25,8316,2024,25-34,Enterprise
+UK,Finance,Claude,92.36,1157,2024,25-34,Enterprise
+UK,Finance,Midjourney,99.65,7359,2024,25-34,Enterprise
+UK,Finance,Stable Diffusion,97.93,2442,2024,25-34,Enterprise
+UK,Healthcare,Bard,95.08,3011,2024,25-34,Enterprise
+UK,Healthcare,ChatGPT,95.07,5338,2024,25-34,Enterprise
+UK,Healthcare,Claude,38.6,9581,2024,25-34,Enterprise
+UK,Healthcare,Midjourney,97.2,695,2024,25-34,Enterprise
+UK,Healthcare,Stable Diffusion,86.58,7477,2024,25-34,Enterprise
+UK,Manufacturing,Bard,93.96,5668,2024,25-34,Enterprise
+UK,Manufacturing,ChatGPT,99.85,3051,2024,25-34,Enterprise
+UK,Manufacturing,Claude,74.98,9848,2024,25-34,Enterprise
+UK,Manufacturing,Midjourney,98.24,6140,2024,25-34,Enterprise
+UK,Manufacturing,Stable Diffusion,94.87,1149,2024,25-34,Enterprise
+UK,Retail,Bard,84.38,5238,2024,25-34,Enterprise
+UK,Retail,ChatGPT,88.35,157,2024,25-34,Enterprise
+UK,Retail,Claude,97.72,1836,2024,25-34,Enterprise
+UK,Retail,Midjourney,93.07,1560,2024,25-34,Enterprise
+UK,Retail,Stable Diffusion,98.58,2179,2024,25-34,Enterprise
+UK,Technology,Bard,95.03,198,2024,25-34,Enterprise
+UK,Technology,ChatGPT,95.1,2894,2024,25-34,Enterprise
+UK,Technology,Claude,61.84,3226,2024,25-34,Enterprise
+UK,Technology,Midjourney,98.0,3583,2024,25-34,Enterprise
+UK,Technology,Stable Diffusion,92.65,2854,2024,25-34,Enterprise
+UK,Transportation,Bard,78.05,5596,2024,25-34,Enterprise
+UK,Transportation,ChatGPT,97.01,7519,2024,25-34,Enterprise
+UK,Transportation,Claude,85.56,6932,2024,25-34,Enterprise
+UK,Transportation,Midjourney,98.94,4373,2024,25-34,Enterprise
+UK,Transportation,Stable Diffusion,89.77,501,2024,25-34,Enterprise
+USA,Agriculture,Bard,99.3,6704,2024,25-34,Enterprise
+USA,Agriculture,ChatGPT,90.75,4035,2024,25-34,Enterprise
+USA,Agriculture,Claude,74.88,2273,2024,25-34,Enterprise
+USA,Agriculture,Midjourney,98.76,5827,2024,25-34,Enterprise
+USA,Agriculture,Stable Diffusion,79.6,7587,2024,25-34,Enterprise
+USA,Education,Bard,94.88,6718,2024,25-34,Enterprise
+USA,Education,ChatGPT,95.79,1585,2024,25-34,Enterprise
+USA,Education,Claude,93.93,7544,2024,25-34,Enterprise
+USA,Education,Midjourney,96.06,3099,2024,25-34,Enterprise
+USA,Education,Stable Diffusion,93.4,7525,2024,25-34,Enterprise
+USA,Finance,Bard,95.11,9284,2024,25-34,Enterprise
+USA,Finance,ChatGPT,94.24,4115,2024,25-34,Enterprise
+USA,Finance,Claude,88.44,9940,2024,25-34,Enterprise
+USA,Finance,Midjourney,92.09,5042,2024,25-34,Enterprise
+USA,Finance,Stable Diffusion,96.46,8425,2024,25-34,Enterprise
+USA,Healthcare,Bard,85.2,1558,2024,25-34,Enterprise
+USA,Healthcare,ChatGPT,99.33,7324,2024,25-34,Enterprise
+USA,Healthcare,Claude,99.95,9355,2024,25-34,Enterprise
+USA,Healthcare,Midjourney,99.98,5349,2024,25-34,Enterprise
+USA,Healthcare,Stable Diffusion,94.89,4608,2024,25-34,Enterprise
+USA,Manufacturing,Bard,91.86,3039,2024,25-34,Enterprise
+USA,Manufacturing,ChatGPT,98.26,1392,2024,25-34,Enterprise
+USA,Manufacturing,Claude,84.51,1028,2024,25-34,Enterprise
+USA,Manufacturing,Midjourney,98.38,7313,2024,25-34,Enterprise
+USA,Manufacturing,Stable Diffusion,82.52,4663,2024,25-34,Enterprise
+USA,Retail,Bard,94.04,5444,2024,25-34,Enterprise
+USA,Retail,ChatGPT,96.24,1990,2024,25-34,Enterprise
+USA,Retail,Claude,80.24,476,2024,25-34,Enterprise
+USA,Retail,Midjourney,98.98,9366,2024,25-34,Enterprise
+USA,Retail,Stable Diffusion,98.09,2964,2024,25-34,Enterprise
+USA,Technology,Bard,86.97,9334,2024,25-34,Enterprise
+USA,Technology,ChatGPT,96.72,8381,2024,25-34,Enterprise
+USA,Technology,Claude,19.42,8583,2024,25-34,Enterprise
+USA,Technology,Midjourney,98.45,7047,2024,25-34,Enterprise
+USA,Technology,Stable Diffusion,93.78,4910,2024,25-34,Enterprise
+USA,Transportation,Bard,92.74,3113,2024,25-34,Enterprise
+USA,Transportation,ChatGPT,94.46,6567,2024,25-34,Enterprise
+USA,Transportation,Claude,78.25,1917,2024,25-34,Enterprise
+USA,Transportation,Midjourney,96.57,4519,2024,25-34,Enterprise
+USA,Transportation,Stable Diffusion,97.36,3582,2024,25-34,Enterprise
