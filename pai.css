@@ -5,6 +5,8 @@
   --body-color: #a09a9f;
   --oval-color: #d9d9d9;
   --highlight-color: #C800FF;
+  --oval-color: #d9d9d9;
+  --highlight-color: #C800FF;
 
 
   /* Font Sizes */
@@ -164,6 +166,8 @@ button#gpt-switch {
 
   cursor: pointer;
 }
+
+
 /* History Section */
 
 #history {
