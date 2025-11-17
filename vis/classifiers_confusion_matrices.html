@@ -37,8 +37,7 @@
   </head>
   <body>
     <div class="matrix-grid" id="grid"></div>
-    <svg id="legend" width="600" height="80"></svg>
-
+    <svg id="legend" width="760" height="80"></svg>
     <script>
       const datasets = [
         {
@@ -167,7 +166,9 @@
           .attr("stop-color", color(t * maxVal));
       });
 
-      legendSvg
+      const valueG = legendSvg.append("g").attr("transform", `translate(250, 0)`);
+
+      valueG
         .append("rect")
         .attr("x", 100)
         .attr("y", 30)
@@ -182,13 +183,13 @@
 
       const legendAxis = d3.axisBottom(legendScale).ticks(6).tickSize(6);
 
-      legendSvg
+      valueG
         .append("g")
         .attr("transform", `translate(0, ${30 + legendHeight})`)
         .attr("color", "white")
         .call(legendAxis);
 
-      legendSvg
+      valueG
         .append("text")
         .attr("x", 100 + legendWidth / 2)
         .attr("y", 20)
@@ -196,6 +197,46 @@
         .attr("fill", "white")
         .attr("font-weight", "bold")
         .text("Value Legend");
+
+      const textG = legendSvg.append("g")
+        .attr("transform", "translate(10, 10)");
+
+      // Background rectangle with white border
+      textG.append("rect")
+          .attr("width", 290)
+          .attr("height", 50)
+          .attr("stroke", "white")
+          .attr("stroke-width", 2)
+          .attr("rx", 6);
+
+      // Legend text
+      textG.append("text")
+          .attr("x", 20)
+          .attr("y", 20)
+          .attr("fill", "white")
+          .style("font-size", "12px")
+          .text("TP = True Positive");
+
+      textG.append("text")
+          .attr("x", 150)
+          .attr("y", 20)
+          .attr("fill", "white")
+          .style("font-size", "12px")
+          .text("FN = False Negative");
+
+      textG.append("text")
+          .attr("x", 20)
+          .attr("y", 38)
+          .attr("fill", "white")
+          .style("font-size", "12px")
+          .text("FP = False Positive");
+
+      textG.append("text")
+          .attr("x", 150)
+          .attr("y", 38)
+          .attr("fill", "white")
+          .style("font-size", "12px")
+          .text("TN = True Negative");
 
       ["tp", "tn", "fp", "fn"].forEach((label) => {
         d3.selectAll(`g.g-${label}`)
