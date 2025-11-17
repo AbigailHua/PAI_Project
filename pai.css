@@ -5,8 +5,6 @@
   --body-color: #a09a9f;
   --oval-color: #d9d9d9;
   --highlight-color: #c800ff;
-  --oval-color: #d9d9d9;
-  --highlight-color: #c800ff;
 
   /* Font Sizes */
   --h1-fs: 80px;
@@ -180,8 +178,8 @@ button#gpt-switch {
   position: absolute;
   background: var(--oval-color);
   border-radius: 50%;
-  cursor: pointer;
   transform: translate(-50%, -50%);
+  cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   z-index: 10;
 }
@@ -192,27 +190,27 @@ button#gpt-switch {
 }
 
 #history .oval-1 {
-  width: 40px;
-  height: 25px;
-  top: 25%;
+  width: 30px;
+  height: 30px;
+  top: calc(25% + 12%);
   left: 35%;
 }
 #history .oval-2 {
-  width: 40px;
-  height: 25px;
-  top: 35%;
+  width: 30px;
+  height: 30px;
+  top: calc(35% + 12%);
   left: 46%;
 }
 #history .oval-3 {
-  width: 45px;
-  height: 25px;
-  top: 50%;
+  width: 30px;
+  height: 30px;
+  top: calc(50% + 12%);
   left: 63%;
 }
 #history .oval-4 {
-  width: 50px;
-  height: 28px;
-  top: 65%;
+  width: 35px;
+  height: 35px;
+  top: calc(65% + 12%);
   left: 80%;
 }
 
