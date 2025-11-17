@@ -145,7 +145,6 @@ section p {
 
 /* GPT Switch Button */
 button#gpt-switch {
-  font-family: IBM Plex Mono;
   font-size: 1rem;
   font-weight: bold;
 
