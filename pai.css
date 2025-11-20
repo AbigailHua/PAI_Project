@@ -67,33 +67,31 @@ section#thank-you {
 
 #intro h1 {
   margin-left: -20rem;
-  font-size: 10.15313rem;
+  font-size: 10rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 6.76875rem; /* 66.667% */
-  letter-spacing: -0.50763rem;
+  line-height: 6.5;
+  letter-spacing: -0.5rem;
   text-align: left;
   text-transform: uppercase;
   color: var(--header-color);
  /* TEXT CLIPPING MASK */
  background-image: url("images/textbg.png");
- background-size: cover;         /* or 'contain' depending on your look */
+ background-size: cover;    
  background-position: center;
  background-clip: text;
  -webkit-background-clip: text;
-
- /* REQUIRED for the text to become transparent so mask shows */
  color: transparent;
  -webkit-text-fill-color: transparent;
 
- display: inline-block; /* recommended for cleaner masking */
+ display: inline-block; 
 }
 #intro h1 .grey {
   background: none !important;
   -webkit-background-clip: unset !important;
   background-clip: unset !important;
 
-  color: #A6A6A6 !important;       /* your grey */
+  color: --header-color !important;    
   -webkit-text-fill-color: #A6A6A6 !important;
 }
 
