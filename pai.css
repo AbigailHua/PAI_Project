@@ -67,11 +67,11 @@ section#thank-you {
 
 #intro h1 {
   margin-left: -20rem;
-  font-size: 10rem;
+  font-size: 10.15313rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 6.5;
-  letter-spacing: -0.5rem;
+  line-height: 6.76875rem;
+  letter-spacing: -0.50763rem;
   text-align: left;
   text-transform: uppercase;
   color: var(--header-color);
@@ -81,6 +81,8 @@ section#thank-you {
  background-position: center;
  background-clip: text;
  -webkit-background-clip: text;
+
+ /* REQUIRED for the text to become transparent so mask shows */
  color: transparent;
  -webkit-text-fill-color: transparent;
 
@@ -91,8 +93,8 @@ section#thank-you {
   -webkit-background-clip: unset !important;
   background-clip: unset !important;
 
-  color: --header-color !important;    
-  -webkit-text-fill-color: #A6A6A6 !important;
+  color: var(--header-color)!important;    
+  -webkit-text-fill-color: var(--header-color) !important;
 }
 
 section#intro p {
